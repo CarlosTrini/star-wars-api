@@ -26,7 +26,7 @@ const Favorites = () => {
         {
           (favorites?.length > 0) 
           ? <CardContainer characters={favorites} favorites={true} />
-          : <MsgDisplay />
+          : <MsgDisplay msg="Aún no has seleccionado un favorito" />
         }
       </main>
     </>

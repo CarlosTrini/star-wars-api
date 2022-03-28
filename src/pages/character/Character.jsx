@@ -23,7 +23,7 @@ const Character = () => {
       {
         oneCharacter?.name
           ? <CharacterDetails character={oneCharacter} /> 
-          : <MsgDisplay />
+          : <MsgDisplay msg="Recolectando información" />
       }
     </>
   )

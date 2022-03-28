@@ -26,7 +26,7 @@ const Home = () => {
 
   //solo se necesita una vez, para llenar el arreglo de personajes la primera carga...
   useEffect(() => {
-    console.log(window.scrollTo(0,0));
+    window.scrollTo(0,0);
     //si se visitan extraen todos los personajes en home y después se hace un cambio rápido entre la pagina 
     //home y favoritos, la currentpage en el state se actualiza a 10, y no es una ruta válida. reset page hace
     //que siempre que se cargue el componente, sea 1 y evitar ese error

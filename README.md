@@ -7,4 +7,4 @@ Página que muestra los personajes de star wars mediante el consumo de api
 - React-intersection-oberver
 - sass
 - axios
-Link -> https://star-wars-api-react.netlify.app/
+- Link -> https://star-wars-api-react.netlify.app/
