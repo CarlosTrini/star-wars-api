@@ -1,0 +1,12 @@
+@use '../utils/vars' as vars;
+@use '../utils/extends.scss';
+
+.up_button{
+  position: fixed;
+  bottom: 10%;
+  right: 6px;
+  @extend .btn;
+  background-color: vars.$light;
+  border-radius: .5rem;
+  box-shadow: 0 .3rem .4rem vars.$dark_purple;
+}

@@ -1,0 +1,8 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins;
+
+.favorites{
+  width: 100%;
+  min-height: 100vh;
+  padding-top:4.5rem;
+}

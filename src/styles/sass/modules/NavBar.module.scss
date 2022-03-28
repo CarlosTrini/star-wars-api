@@ -1,0 +1,80 @@
+@use '../utils/vars'as vars;
+@use '../utils/mixins'as mixins;
+@use '../utils/extends.scss';
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 1rem 2rem;
+
+  &_links {
+    display: flex;
+    gap: .5rem;
+
+    .link_item {
+      a {
+        color: vars.$light;
+      }
+
+      a:hover {
+        color: vars.$yellow;
+      }
+    }
+  }
+
+
+  &_btn_theme {
+    height: min-content;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    @extend .btn;
+
+    img {
+      width: 25px;
+    }
+  }
+}
+
+
+.back {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+    background-color: vars.$dark;
+  }
+  transition: all .3s ease-in-out;
+  .nav_logo{
+    filter: invert(1); //invierte colores a logo cuando se usa modo 'light mode' y se hace scroll
+  }
+}
+
+//estilos para el cambio de tema
+
+.nav_logo {
+  width: 200px;
+  height: 100px;
+}
+
+.logo_dark{
+  filter: invert(1);// invierte colores a logo cuando se selecciona 'dark mode'
+}

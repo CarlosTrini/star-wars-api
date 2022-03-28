@@ -1,0 +1,25 @@
+@use './vars.scss' as vars;
+
+@mixin phone{
+   @media (min-width: map-get(vars.$breakpoints, "sm") ) {
+      @content
+   }
+}
+
+@mixin tablet{
+   @media (min-width: map-get(vars.$breakpoints, "md")) {
+      @content
+   }
+}
+
+@mixin laptop{
+   @media (min-width: map-get(vars.$breakpoints, "lg")) {
+      @content
+   }
+}
+
+@mixin desktop{
+   @media (min-width: map-get(vars.$breakpoints, "xl")) {
+      @content
+   }
+}

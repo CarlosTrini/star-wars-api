@@ -1,0 +1,22 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins;
+
+.hero{
+  width: 100%;
+  height:75vh;
+  overflow: hidden;
+} 
+
+
+// estilos para cambio de tema
+.img_day{
+  width: 100%;
+  height:450px;
+  background: url('../../../images/background_day.jpg') center/cover no-repeat;
+}
+
+.img_night{
+  width: 100%;
+  height:450px;
+  background: url('../../../images/background_night.jpg') center/cover no-repeat;
+}

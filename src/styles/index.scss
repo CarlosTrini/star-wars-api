@@ -1,0 +1,58 @@
+@forward  './sass//utils//normalize.scss';
+@use './sass/utils/vars' as vars;
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,*::after, *::before{
+  box-sizing: inherit;
+}
+body{
+  min-height: 100vh;
+  // background: rgb(0,0,0) url('../images/background.jpg') center/cover;
+  font-family: vars.$font;
+  color: vars.$light;
+  font-size: 20px;
+}
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+
+img{
+  width: 100%;
+}
+figure {
+	margin: 0;
+  display: flex;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+
+a{
+  color: vars.$dark;
+  text-decoration:none;
+}
+
+.container{
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.dark{
+  background-color: vars.$dark;
+  color: vars.$light;
+  button{
+    color: vars.$light;
+  }
+}
+
+.light{
+  background-color: vars.$light;
+  color: vars.$dark;
+}

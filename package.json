@@ -1,0 +1,38 @@
+{
+  "name": "star-wars",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "imports": {
+    "@components/*": "./src/components/**/*.js",
+    "@styles/*": "./src/styles/**/*.*",
+    "@customs": "/src/customs/**/*.js",
+    "@helpers": "/src/helpers/**/*.js",
+    "@features": "/src/features/**/*.js",
+    "@configs": "/src/configs/**/*.js",
+    "@pages": "/src/pages/**/*.js",
+    "@routes": "/src/routes/**/*.js",
+    "@images": "/src/images/**/*.js",
+    "@root": "/src/"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-intersection-observer": "^8.33.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.49.9",
+    "sweetalert2": "^11.4.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.8.0"
+  }
+}

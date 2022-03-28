@@ -1,0 +1,18 @@
+@use '../utils/vars'as vars;
+@use '../utils/mixins'as mixins;
+
+
+.main_card {
+    text-align: center;
+
+    &_title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1rem;
+}

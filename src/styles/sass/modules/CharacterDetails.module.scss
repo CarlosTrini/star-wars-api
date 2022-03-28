@@ -1,0 +1,38 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins;
+@use '../utils/extends';
+
+.details{
+  width: 100%;
+  min-height: 100vh;
+  padding-top:4.5rem;
+  text-align: center;
+  line-height: 2;
+  background: 
+  url('../../../images/lasers.png') bottom/10rem no-repeat;
+
+  &_title{
+    color: vars.$red;
+  }
+
+  &_character{
+    width: 70%;
+    margin: auto;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    letter-spacing: .1rem;
+    span{
+      font-weight: vars.$thin;
+    }
+  }
+
+  &_back_link{
+    display: block;
+    width: fit-content;
+    margin:.5rem auto;
+    padding: .2rem 1rem;
+    @extend .btn;   
+    border-radius: .5rem;
+    background-color: vars.$yellow;
+  }
+}

@@ -1,0 +1,22 @@
+//FONT
+$font: 'Londrina Solid', cursive;
+$thin:100;
+$light:300;
+$regular: 400;
+$black:900;
+
+//COLORS
+$dark:#111111;
+$light:#f3e7e7;
+$dark_purple:#2A1F2D;
+$black_coffee:#3B2C35;
+$yellow:#FFD700;
+$red:#B22222;
+
+//SIZES
+$breakpoints:(
+  "sm": 480px,
+  "md": 768px,
+  "lg": 960px,
+  "xl": 1200px
+);
